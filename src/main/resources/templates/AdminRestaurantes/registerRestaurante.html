@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Spicyo</title>
+    <title>Register</title>
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -28,37 +28,24 @@
 <!-- body -->
 
 <body class="main-layout">
+
 <!-- loader  -->
-<div class="loader_bg">
+<!--<div class="loader_bg">
     <div class="loader"><img src="images/loading.gif" alt="" /></div>
 </div>
-
+-->
 <div class="wrapper">
     <!-- end loader -->
 
     <div id="content">
         <!-- header -->
         <header>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="full">
-                            <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="full">
-                            <div class="right_header_info">
-                                <ul>
-                                    <li class="button_user"><a class="button active" th:href="@{/login}" >Cerrar sesion</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="container-fluid" >
+                <div style="text-align: center">
+                    <h2 style="color: white;font-size: xx-large">Registra tu restaurante</h2>
                 </div>
             </div>
         </header>
-
 
         <div class="bg_bg">
 
@@ -67,38 +54,63 @@
             <fooetr>
                 <div class="footer">
                     <div class="container-fluid">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-12" style="align-content: center">
-                                <div class="container" style="text-align: center">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h1>Bienvenido, XXXXX</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Llena el siguiente formulario</h2>
+                            </div>
 
-                                    <div class="row" style="padding-top: 50px">
-                                        <h2>Aun no has registrado tu restaurante</h2>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                                <form method="post" th:action="@{/validarrestaurante}" class="main_form">
+                                    <div class="row">
+
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input type="hidden" name="correo" id="correo" value="ola" >
+                                            <input class="form-control" placeholder="Nombre del Restaurante" type="text" name="nombre" id="nombre">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="RUC" type="text" name="ruc" id="ruc">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="Direccion" type="text" name="direccion" id="direccion">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="Distrito" type="text" name="distrito" id="distrito">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="Ubicacion" type="text" name="ubicacion" id="ubicacion">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="Categorías" type="text" name="categorias" id="categorias">
+                                        </div>
+                                        </br>
+                                        </br>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <button class="send" type="submit">Registrar</button>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <a class="send" th:href="@{/estado2}" style="text-align: center">Regresar</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                </form>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+                                <br>
+                                <br>
+                                <br>
+                                <div class="img-box">
+                                    <figure><img src="images/img.jpg" alt="Imagen del Administrador" height="800" width="900" /></figure>
                                 </div>
+
                             </div>
                         </div>
-                        <div class="row" style="padding-top: 100px">
-                            <a class="admin" type="submit" th:href="@{/registerRestaurante}" style="text-align: center">Registre su restaurante</a>
-                        </div>
+
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                     <div class="copyright">
                         <div class="container">
                             <p>© 2021 Todos los derechos reservados.</p>
@@ -110,6 +122,7 @@
 
         </div>
     </div>
+
     <div class="overlay"></div>
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
@@ -118,7 +131,6 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-
     <script src="js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
@@ -139,7 +151,6 @@
             });
         });
     </script>
-
     <style>
         #owl-demo .item{
             margin: 3px;
@@ -150,8 +161,6 @@
             height: auto;
         }
     </style>
-
-
     <script>
         $(document).ready(function() {
             var owl = $('.owl-carousel');
@@ -173,7 +182,7 @@
             })
         })
     </script>
-
+</div>
 </body>
 
 </html>

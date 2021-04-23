@@ -1,7 +1,6 @@
 package com.example.avances.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,22 +15,40 @@ public class AdminRestauranteController {
     public String registerAdmin(){
         return "AdminRestaurantes/register";
     }
-    @GetMapping("/registro")
+    @GetMapping("/espera")
     public String esperaConfirmacion(){
-        return "AdminRestaurantes/registro";
+        return "AdminRestaurantes/espera";
     }
     @GetMapping("/olvide")
     public String olvideContraseña(){
         return "AdminRestaurantes/olvide";
     }
     @PostMapping("/estado")
-    public String estadoAdmin(@RequestParam("correo") String correo, Model model){
+    public String estadoAdmin(@RequestParam("correo") String correo){
         //Se valida con el correo si en la bd aparece como usuario aceptado o en espera y tendría dos posibles salidas
-        System.out.println(correo);
         if(correo!=""){
             return "AdminRestaurantes/restaurante";
         }
-        model.addAttribute("mensaje","Aun no has sido aceptado");
         return "redirect:/login";
+    }
+    @GetMapping("/registerRestaurante")
+    public String esperaRestaurante(){
+        return "AdminRestaurantes/registerRestaurante";
+    }
+    @PostMapping("/validarrestaurante")
+    public String validarRestaurante(){
+        return "AdminRestaurantes/restaurante";
+    }
+    @GetMapping("/estado2")
+    public String estado(){
+        return "AdminRestaurantes/restaurante";
+    }
+    @PostMapping("/validarpersona")
+    public String validarPersona(){
+        return "AdminRestaurantes/restaurante";
+    }
+    @GetMapping("/correoconfirmar")
+    public String correoConfirmar(){
+        return "AdminRestaurantes/correo";
     }
 }

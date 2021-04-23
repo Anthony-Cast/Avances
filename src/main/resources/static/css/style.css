@@ -932,4 +932,19 @@
      color: #fff;
      font-weight: 500;
 }
- 
+.admin {
+    font-family: poppins;
+    float: left;
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+    color: #000;
+    max-width: 250px;
+    padding: 13px 0px;
+    width: 100%;
+    font-size: 18px;
+}
+.admin:hover {
+    background: #000;
+    color: #fff;
+}
