@@ -37,7 +37,7 @@ public class AdminRestauranteController {
     }
     @PostMapping("/validarrestaurante")
     public String validarRestaurante(){
-        return "AdminRestaurantes/restaurante";
+        return "AdminRestaurantes/validarrestaurante";
     }
     @GetMapping("/estado2")
     public String estado(){
