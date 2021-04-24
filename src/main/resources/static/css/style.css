@@ -109,7 +109,7 @@
      padding: 0;
 }
  .form-control:focus {
-     border-color: #ffffff !important;
+     border-color: black !important;
      box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
  .navbar-form input {
@@ -258,7 +258,7 @@
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
  header {
      min-height: 90px;
-     background: #212020;
+     background: #FF337A;
      padding: 15px 0;
      position: fixed;
      width: 100%;
@@ -639,7 +639,8 @@
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     background: #d8b00f;
+     /* background: #d8b00f*/
+     background: white;
      padding-top:90px;
      margin-top: 90px;
 }
@@ -659,7 +660,7 @@
      padding-left: 223px;
 }
  .form-control {
-     border: #fff solid 2px;
+     border: black solid 2px;
      border-radius: inherit;
      margin-bottom: 25px;
      padding: 15px 20px;
@@ -667,7 +668,7 @@
 }
  .form-control:focus {
      box-shadow: inherit;
-     border: #fff solid 2px !important;
+     border: black solid 2px !important;
 }
  .textarea {
      font-family: poppins;
@@ -682,16 +683,16 @@
      float: left;
      margin: 0 auto;
      display: block;
-     background: #fff;
-     color: #000;
-     max-width: 165px;
+     background: #FF337A;
+     color: white;
+     max-width: 250px;
      padding: 13px 0px;
      width: 100%;
      font-size: 18px;
 }
  .send:hover {
-     background: #000;
-     color: #fff;
+     background: #FF337A;
+     color: black;
 }
  .footer .img-box {
      padding-right: 25px;

@@ -40,22 +40,6 @@
         <!-- header -->
         <header>
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="full">
-                            <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="full">
-                            <div class="right_header_info">
-                                <ul>
-                                    <li class="button_user"><a class="button active" th:href="@{/login}" >Cerrar sesion</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </header>
 
@@ -68,20 +52,14 @@
                 <div class="footer">
                     <div class="container-fluid">
                         <div class="row" style="text-align: center">
-                            <div class="col-xl-12" style="align-content: center">
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
+                            <div class="col-xl-12" style="align-content: center;padding-top: 150px">
                                     <div class="row">
-                                        <button style="border-radius: 12px; background: #1f1f1f;width: 1000px;height: 150px;margin: auto"><div style="color: white;font-size:xx-large">Se ha enviado un mensaje de confirmación a su correo</div></button>
+                                        <a style="margin: auto"><div style="color: black;font-size:xx-large"><u>Se ha enviado un mensaje de confirmación a su correo</u></div></a>
                                     </div>
                             </div>
                         </div>
                         <div class="row" style="padding-top: 100px">
-                            <a class="admin" type="submit" th:href="@{/login}" style="text-align: center">Regresar</a>
+                            <a class="send" type="submit" style="text-align: center" th:href="@{estado2}">Ingresar a mi cuenta</a>
                         </div>
                     </div>
                     <br>

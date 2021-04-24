@@ -61,9 +61,8 @@
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 
-                                <form method="post" th:action="@{/validarrestaurante}" class="main_form">
+                                <form method="post" th:action="@{/espera}" class="main_form">
                                     <div class="row">
-
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                             <input type="hidden" name="correo" id="correo" value="ola" >
                                             <input class="form-control" placeholder="Nombre del Restaurante" type="text" name="nombre" id="nombre">
@@ -99,17 +98,12 @@
                                 </form>
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-
-                                <br>
-                                <br>
-                                <br>
-                                <div class="img-box">
-                                    <figure><img src="images/img.jpg" alt="Imagen del Administrador" height="800" width="900" /></figure>
+                                <div class="img-box" align="center">
+                                    <figure><img src="/images/bembos.png" style="width:500px;height:500px"></figure>
                                 </div>
-
+                                <div style="text-align: center;font-size: 30px;color: black">Imagen del restaurante</div>
                             </div>
                         </div>
-
                     </div>
                     <div class="copyright">
                         <div class="container">

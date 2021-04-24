@@ -6,7 +6,6 @@
 $(function () {
 
 	"use strict";
-
 	/* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
@@ -228,7 +227,6 @@ $(function () {
 
 	$('.deal-slider').slick({
 		dots: false,
-		infinite: false,
 		prevArrow: '.previous-deal',
 		nextArrow: '.next-deal',
 		speed: 500,

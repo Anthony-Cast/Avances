@@ -41,19 +41,8 @@
         <header>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="full">
-                            <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="full">
-                            <div class="right_header_info">
-                                <ul>
-                                    <li class="button_user"><a class="button active" th:href="@{/login}" >Cerrar sesion</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="col-md-11" style="text-align: right">
+                        <a style="color: white;font-size: x-large" th:href="@{/login}" ><u style="color: white">Cerrar sesion</u></a></li>
                     </div>
                 </div>
             </div>
@@ -61,44 +50,32 @@
 
 
         <div class="bg_bg">
-
-            <!-- end about -->
-            <!-- footer -->
             <fooetr>
                 <div class="footer">
                     <div class="container-fluid">
                         <div class="row" style="text-align: center">
-                            <div class="col-xl-12" style="align-content: center">
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
+                            <div class="col-xl-12" style="align-content: center;padding-bottom: 100px">
                                 <div class="row">
-                                    <button style="border-radius: 12px; background: #1f1f1f;width: 1000px;height: 150px;margin: auto"><div style="color: white;font-size:xx-large">Su restaurante esta en proceso de evaluación</div></button>
+                                    <a style="margin: auto"><div style="color: black;font-size:xx-large"><u>Su restaurante esta en proceso de evaluación</u></div></a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12" align="center">
+                            <div class="img-box">
+                                <figure>
+                                    <img style="width: 300px;height: 300px" src="/images/tiempo.png">
+                                </figure>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-12" style="align-content: center">
                                 <div class="row" style="padding-top: 100px">
-                                    <a class="admin" type="submit" th:href="@{/estado2}" style="text-align: center">Anular Registro</a>
+                                    <a class="send" type="submit" style="text-align: center" th:href="@{/estado2}">Anular Registro</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                </div>
                     <div class="copyright">
                         <div class="container">
                             <p>© 2021 Todos los derechos reservados.</p>
