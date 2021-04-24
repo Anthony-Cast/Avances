@@ -20,9 +20,8 @@ public class AdminRestauranteController {
         return "AdminRestaurantes/espera";
     }
     @PostMapping("/estado")
-    public String estadoAdmin(@RequestParam("correo") String correo){
+    public String estadoAdmin(@RequestParam("correo") String correo) {
         //Se valida con el correo si en la bd aparece como usuario aceptado o en espera y tendría dos posibles salidas
-        System.out.println(correo);
         if(correo!=""){
             return "AdminRestaurantes/restaurante";
         }
@@ -43,5 +42,13 @@ public class AdminRestauranteController {
     @GetMapping("/correoconfirmar")
     public String correoConfirmar(){
         return "AdminRestaurantes/correo";
+    }
+    @GetMapping("/perfil")
+    public String prefilRestaurante(){
+        return "AdminRestaurantes/perfilrestaurante";
+    }
+    @GetMapping("/menu")
+    public String verMenu(){
+        return "AdminRestaurantes/menu";
     }
 }
