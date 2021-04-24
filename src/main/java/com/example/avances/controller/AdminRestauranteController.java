@@ -51,4 +51,8 @@ public class AdminRestauranteController {
     public String verMenu(){
         return "AdminRestaurantes/menu";
     }
+    @GetMapping("/prueba")
+    public String verEjemplo(){
+        return "html/recipe";
+    }
 }
