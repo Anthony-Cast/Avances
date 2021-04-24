@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
+    <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <title>Register</title>
+    <!-- site metas -->
+    <title>Menu</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- owl css -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- style css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- responsive-->
     <link rel="stylesheet" href="css/responsive.css">
@@ -19,8 +29,8 @@
 </head>
 <!-- body -->
 
-<body class="main-layout">
-
+<body class="main-layout Recipes_page">
+<!-- loader  -->
 <div class="loader_bg">
     <div class="loader"><img src="images/loading.gif" alt="" /></div>
 </div>
@@ -28,139 +38,292 @@
 <div class="wrapper">
     <!-- end loader -->
 
+    <div class="sidebar">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+
+            <div id="dismiss">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+
+            <ul class="list-unstyled components">
+
+                <li >
+                    <a href="perfilrestaurante.html">Perfil</a>
+                </li>
+                <li>
+                    <a href="about.html">Cupones</a>
+                </li>
+                <li class="active">
+                    <a href="recipe.html">Calificaciones</a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+
     <div id="content">
         <!-- header -->
         <header>
-            <div class="container-fluid" >
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="full">
-                    <div class="right_header_info"  style="text-align: right">
-                        <ul>
-                        <li><a style="color: white;font-size: x-large" th:href="@{/login}" ><u style="color: white">Cerrar sesion</u></a></li>
-                        <li><a style="color: white;font-size: x-large" th:href="@{/perfil}" ><u style="color: white">Regresar</u></a></li>
-                        </ul>
+                    <div class="col-md-3">
+                        <div class="full">
+                            <a href="perfilrestaurante.html"><img style="height: 120px;position: relative;" src="images/anthony_logo.jpg"  /></a>
+                        </div>
                     </div>
+                    <div class="col-md-9">
+                        <div class="full">
+                            <div class="right_header_info">
+                                <ul>
+                                    <li class="dinone">Contáctanos : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
+                                    <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">Av. Universitaria 1801 , San Miguel</a></li>
+                                    <li>
+                                        <button type="button" id="sidebarCollapse">
+                                            <img src="images/menu_icon.png" alt="#">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-        <div class="bg_bg">
-            <fooetr>
-                <div class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="img-box" align="center">
-                                    <figure><img src="/images/bembos.png" style="width:500px;height:500px"></figure>
-                                </div>
-                                <div style="text-align: center;font-size: 30px;color: black">Imagen del restaurante</div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div style="font-size: xxx-large;color:black;padding-top: 50px"><b>Mi restaurante</b></div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xl-12">
-                                            <div style="font-size: large;color: black">Calificación general: 4.5 <img src="/images/estrella.png" style="width: 20px;height: 20px"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="padding-top: 50px">
-                                        <div class="col-md-6">
-                                            <a class="send" th:href="@{/calificaciones}" style="text-align: center">Ver calificaciones de usuarios</a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="send" th:href="@{/reporte}" style="text-align: center">Ver reporte</a>
-                                        </div>
-                                    </div>
-                                    <div class="row" style="padding-top: 50px">
-                                        <div class="col-md-3">
-                                            <a class="send" th:href="@{/pedidos}" style="text-align: center" >Registrarse</a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="send" th:href="@{/menu}" style="text-align: center">Regresar</a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a class="send" th:href="@{/cupones}" style="text-align: center">Mis cupones</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="copyright" style="padding-top: 50px">
-                        <div class="container">
-                            <p>© 2021 Todos los derechos reservados.</p>
+        <!-- end header -->
+
+        <div class="yellow_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <br>
+                            <br>
+                            <h2>Nuestro menu</h2>
                         </div>
                     </div>
                 </div>
-            </fooetr>
-            <!-- end footer -->
-
+            </div>
         </div>
+        <!-- section -->
+        <section class="resip_section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2 style="color:white">Combos</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/bembos1.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Duo Crispy</h3>
+                                    <h4><span class="theme_color">S/.</span>14</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/bembos2.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Combo La Colorada</h3>
+                                    <h4><span class="theme_color">S/.</span>20</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/bembos1.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Duo Crispy</h3>
+                                    <h4><span class="theme_color">S/.</span>14</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/bembos2.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Combo La Colorada</h3>
+                                    <h4><span class="theme_color">S/.</span>20</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/bembos1.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Duo Crispy</h3>
+                                    <h4><span class="theme_color">S/.</span>14</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/bembos2.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Combo La Colorada</h3>
+                                    <h4><span class="theme_color">S/.</span>20</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resip_section">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2 style="color:white">Hamburguesas</h2>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme">
+
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/hambur1.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Hamburguesa clasica</h3>
+                                    <h4><span class="theme_color">S/.</span>14</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/hambur2.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Hamburguesa Carretillera</h3>
+                                    <h4><span class="theme_color">S/.</span>20</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/hambur3.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Hamburguesa La Colorada</h3>
+                                    <h4><span class="theme_color">S/.</span>30</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/hambur1.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Hamburguesa clasica</h3>
+                                    <h4><span class="theme_color">S/.</span>14</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/hambur2.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Hamburguesa Carretillera</h3>
+                                    <h4><span class="theme_color">S/.</span>20</h4>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="product_blog_img">
+                                    <img src="images/hambur3.png" alt="#" />
+                                </div>
+                                <div class="product_blog_cont">
+                                    <h3>Hamburguesa La Colorada</h3>
+                                    <h4><span class="theme_color">S/.</span>30</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <fooetr>
+            <div class="footer">
+                <div class="container-fluid">
+                        <div>
+                            <div class="footer_logo">
+                                <a href="index.html"><img src="images/anthony_logo.jpg" alt="#" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <ul class="lik">
+                                <li > <a href="index.html">Perfil</a></li>
+                                <li class="active"> <a href="recipe.html">Cupones</a></li>
+                                <li> <a href="blog.html">Calificaciones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </fooetr>
+        <!-- end footer -->
+
     </div>
-
-    <div class="overlay"></div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#dismiss, .overlay').on('click', function() {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
-    <style>
-        #owl-demo .item{
-            margin: 3px;
-        }
-        #owl-demo .item img{
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-    </style>
-    <script>
-        $(document).ready(function() {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            })
-        })
-    </script>
 </div>
+<div class="overlay"></div>
+<!-- Javascript files-->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+<script src="js/jquery-3.0.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#dismiss, .overlay').on('click', function() {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
+        });
+
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            margin: 10,
+            nav: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    })
+</script>
+
 </body>
 
 </html>
