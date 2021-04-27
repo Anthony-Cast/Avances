@@ -34,10 +34,22 @@ public class AdminRestauranteController {
         return "AdminRestaurantes/cupones";
     }
 
+    @PostMapping("/guardarPlato")
+    public String guardarPlato(){
+
+        return "AdminRestaurantes/menu";
+    }
+
     @GetMapping("/crearCupon")
     public String crearCupon(){
 
         return "AdminRestaurantes/generarCupon";
+    }
+
+    @GetMapping("/crearPlato")
+    public String crearPlato(){
+
+        return "AdminRestaurantes/newPlato";
     }
 
     @GetMapping("/registerRestaurante")
@@ -69,6 +81,12 @@ public class AdminRestauranteController {
     public String verCupones(){
 
         return "AdminRestaurantes/cupones";
+    }
+
+    @GetMapping("/pedidos")
+    public String verPedidos(){
+
+        return "AdminRestaurantes/pedidos";
     }
 
     @GetMapping("/prueba")

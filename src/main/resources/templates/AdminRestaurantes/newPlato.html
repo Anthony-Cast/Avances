@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Generar cupon</title>
+    <title>Register</title>
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,7 +42,7 @@
         <header>
             <div class="container-fluid" >
                 <div style="text-align: center">
-                    <h2 style="color: white;font-size: xx-large">Generar cupon</h2>
+                    <h2 style="color: white;font-size: xx-large">Registra un plato</h2>
                 </div>
             </div>
         </header>
@@ -61,34 +61,28 @@
 
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 
-                                <form method="post" th:action="@{/guardarCupon}" class="main_form">
+                                <form method="post" th:action="@{/guardarPlato}" class="main_form">
                                     <div class="row">
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                                             <input type="hidden" name="correo" id="correo" value="ola" >
-                                            <input class="form-control" placeholder="Nombre del cupon" type="text" name="nombre" id="nombre">
-                                        </div>
-                                        <form class="main_form">
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                                <label class="col-xl-12 col-lg-12 col-md-12 col-sm-12" for="startdate">Fecha de inicio</label>
-                                                <input class="form-control" type="date" id="startdate" name="startdate">
-                                            </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                                <label class="col-xl-12 col-lg-12 col-md-12 col-sm-12" for="enddate">Fecha de fin</label>
-                                                <input class="form-control" type="date" id="enddate" name="enddate">
-                                            </div>
-                                        </form>
-                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <input class="form-control" placeholder="Descripcion" type="text" name="descripcion" id="descripcion">
+                                            <input class="form-control" placeholder="Nombre del plato" type="text" name="nombre" id="nombre">
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                            <input class="form-control" placeholder="Descuento (S/.)" type="text" name="descuento" id="descuento">
+                                            <input class="form-control" placeholder="Descripcion del plato" type="text" name="ruc" id="ruc">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="Stock diario" type="text" name="direccion" id="direccion">
+                                        </div>
+                                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                            <input class="form-control" placeholder="Precio" type="text" name="distrito" id="distrito">
                                         </div>
                                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 15px">
-                                            <label class="col-xl-12 col-lg-12 col-md-12 col-sm-12" for="plato">Plato asociado</label>
-                                            <select class="custom-select" name="plato" id="plato">
-                                                <option value="1" >Hamburguesa Clasica</option>
-                                                <option value="2" >Helado</option>
-                                                <option value="3" >Nuggets</option>
+                                            <label class="col-xl-12 col-lg-12 col-md-12 col-sm-12" for="categoria">Categoria</label>
+                                            <select class="custom-select" name="categoria" id="categoria">
+                                                <option value="1" >Hamburguesas</option>
+                                                <option value="2" >Bebidas</option>
+                                                <option value="3" >Postres</option>
+                                                <option value="4" >Combos</option>
                                             </select>
                                         </div>
                                         </br>
@@ -99,7 +93,7 @@
                                                     <button class="send" type="submit">Registrar</button>
                                                 </div>
                                                 <div class="col-md-3">
-                                                    <a class="send" th:href="@{/cupones}" style="text-align: center">Regresar</a>
+                                                    <a class="send" th:href="@{/menu}" style="text-align: center">Regresar</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,9 +102,9 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                 <div class="img-box" align="center">
-                                    <figure><img src="/images/cupon.jpg" style="width:475px;height:800px"></figure>
+                                    <figure><img src="/images/bembos.png" style="width:500px;height:500px"></figure>
                                 </div>
-                                <div style="text-align: center;font-size: 30px;color: black">Imagen del cupon</div>
+                                <div style="text-align: center;font-size: 30px;color: black">Imagen del restaurante</div>
                             </div>
                         </div>
                     </div>
