@@ -109,7 +109,7 @@
      padding: 0;
 }
  .form-control:focus {
-     border-color: black !important;
+     border-color: #ffffff !important;
      box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
  .navbar-form input {
@@ -258,7 +258,7 @@
 /*--------------------------------------------------------------------- header ---------------------------------------------------------------------*/
  header {
      min-height: 90px;
-     background: #FF337A;
+     background: #212020;
      padding: 15px 0;
      position: fixed;
      width: 100%;
@@ -639,8 +639,7 @@
 /** end Our Client **/
 /*--------------------------------------------------------------------- footer ---------------------------------------------------------------------*/
  .footer {
-     /* background: #d8b00f*/
-     background: white;
+     background: #d8b00f;
      padding-top:90px;
      margin-top: 90px;
 }
@@ -659,8 +658,13 @@
      padding-top: 30px;
      padding-left: 223px;
 }
+ .main_formy{
+     padding-top: 30px;
+     padding-left: 130px;
+     padding-right: 80px;
+ }
  .form-control {
-     border: black solid 2px;
+     border: #fff solid 2px;
      border-radius: inherit;
      margin-bottom: 25px;
      padding: 15px 20px;
@@ -668,7 +672,7 @@
 }
  .form-control:focus {
      box-shadow: inherit;
-     border: black solid 2px !important;
+     border: #fff solid 2px !important;
 }
  .textarea {
      font-family: poppins;
@@ -683,16 +687,16 @@
      float: left;
      margin: 0 auto;
      display: block;
-     background: #FF337A;
-     color: white;
-     max-width: 400px;
+     background: #fff;
+     color: #000;
+     max-width: 165px;
      padding: 13px 0px;
      width: 100%;
      font-size: 18px;
 }
  .send:hover {
-     background: #FF337A;
-     color: black;
+     background: #000;
+     color: #fff;
 }
  .footer .img-box {
      padding-right: 25px;
@@ -933,7 +937,7 @@
      color: #fff;
      font-weight: 500;
 }
-.admin {
+.send2 {
     font-family: poppins;
     float: left;
     margin: 0 auto;
@@ -945,23 +949,24 @@
     width: 100%;
     font-size: 18px;
 }
-.admin:hover {
+.send2:hover {
     background: #000;
     color: #fff;
 }
-.sendlog {
+.send3 {
     font-family: poppins;
     float: left;
     margin: 0 auto;
     display: block;
-    background: #FF337A;
-    color: white;
-    max-width: 250px;
+    background: #fff;
+    color: #000;
+    max-width: 400px;
     padding: 13px 0px;
     width: 100%;
     font-size: 18px;
 }
-.sendlog:hover {
-    background: #FF337A;
-    color: black;
+.send3:hover {
+    background: #000;
+    color: #fff;
 }
+ 
